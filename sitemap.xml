@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.wired-mind.net/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.wired-mind.net/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wired-mind.net/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wired-mind.net/"/>
+  </url>
+  <url>
+    <loc>https://www.wired-mind.net/en/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.wired-mind.net/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wired-mind.net/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wired-mind.net/"/>
+  </url>
+</urlset>

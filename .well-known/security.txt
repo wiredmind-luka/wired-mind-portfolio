@@ -1,0 +1,5 @@
+# security.txt nach RFC 9116 · https://www.wired-mind.net
+Contact: mailto:lukaantonio.miloloza@icloud.com
+Expires: 2027-07-05T00:00:00.000Z
+Preferred-Languages: de, en
+Canonical: https://www.wired-mind.net/.well-known/security.txt

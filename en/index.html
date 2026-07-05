@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wired-mind · DevSecOps, Homelab &amp; Modern Infrastructure</title>
+  <meta name="description" content="Portfolio of Luka Antonio Miloloza – Junior DevSecOps Engineer and certified IT specialist for system integration. Homelab, Proxmox, Linux, cloud and automation.">
+  <meta property="og:title" content="wired-mind · DevSecOps, Homelab &amp; Modern Infrastructure">
+  <meta property="og:description" content="Junior DevSecOps Engineer. I build, understand and document IT infrastructure – from a Proxmox homelab to cloud, security and automation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.wired-mind.net/en/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://www.wired-mind.net/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="canonical" href="https://www.wired-mind.net/en/">
+  <link rel="alternate" hreflang="de" href="https://www.wired-mind.net/">
+  <link rel="alternate" hreflang="en" href="https://www.wired-mind.net/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.wired-mind.net/">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="alternate icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#start">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#start">wired-mind<span class="brand-cursor">_</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Toggle menu</span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-legal"><a href="../impressum.html" hreflang="de">Legal notice (German)</a></li>
+        <li class="nav-legal"><a href="../datenschutz.html" hreflang="de">Privacy policy (German)</a></li>
+        <li class="nav-lang"><a href="../index.html" lang="de" hreflang="de" title="Zur deutschen Version wechseln">DE</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section indicator: desktop only (>1100px), active dot via scroll spy -->
+  <nav class="toc-rail" aria-label="Section overview">
+    <ul>
+      <li><a href="#start" aria-label="Back to top"><span class="toc-dot"></span><span class="toc-label">~/start</span></a></li>
+      <li><a href="#about" aria-label="About"><span class="toc-dot"></span><span class="toc-label">~/about</span></a></li>
+      <li><a href="#skills" aria-label="Skills"><span class="toc-dot"></span><span class="toc-label">~/skills</span></a></li>
+      <li><a href="#projects" aria-label="Projects"><span class="toc-dot"></span><span class="toc-label">~/projects</span></a></li>
+      <li><a href="#certifications" aria-label="Certifications"><span class="toc-dot"></span><span class="toc-label">~/certifications</span></a></li>
+      <li><a href="#experience" aria-label="Experience"><span class="toc-dot"></span><span class="toc-label">~/experience</span></a></li>
+      <li><a href="#contact" aria-label="Contact"><span class="toc-dot"></span><span class="toc-label">~/contact</span></a></li>
+    </ul>
+    <ul class="toc-legal">
+      <li><a href="../impressum.html" hreflang="de" aria-label="Legal notice (German)"><span class="toc-dot"></span><span class="toc-label">~/impressum</span></a></li>
+      <li><a href="../datenschutz.html" hreflang="de" aria-label="Privacy policy (German)"><span class="toc-dot"></span><span class="toc-label">~/privacy</span></a></li>
+    </ul>
+  </nav>
+
+  <main id="start">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow">Junior DevSecOps Engineer · Certified IT Specialist for System Integration</p>
+        <h1>I build, understand and secure IT&nbsp;infrastructure.</h1>
+        <p class="hero-sub">
+          From my own Proxmox homelab across Linux systems and networks to secure
+          file-transfer platforms in my day job. I am currently extending my profile
+          towards cloud, Kubernetes security and automation – hands-on, structured
+          and with a clear roadmap.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+          <!-- TODO: GitHub-Link einsetzen (Konto wird noch eingerichtet) -->
+          <span class="btn is-coming-soon" aria-disabled="true" title="GitHub profile coming soon">GitHub<span class="soon-tag">soon</span></span>
+          <a class="btn" href="https://de.linkedin.com/in/luka-antonio-miloloza-97ba49266" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-hidden="true">
+        <div class="terminal-bar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="terminal-title">luka@homelab: ~</span>
+        </div>
+        <div class="terminal-body">
+          <p class="term-line"><span class="prompt">luka@homelab:~$</span> <span id="typed-cmd"></span><span class="cursor" id="term-cursor">▊</span></p>
+          <div class="term-output" id="term-output">
+            <p class="term-comment"># infrastructure status</p>
+            <table class="status-table">
+              <tr><td><span class="led led-ok"></span>pve</td><td>proxmox ve</td><td class="ok">running</td></tr>
+              <tr><td><span class="led led-ok"></span>pihole</td><td>dns / filter</td><td class="ok">running</td></tr>
+              <tr><td><span class="led led-ok"></span>vlan-seg</td><td>network zones</td><td class="ok">active</td></tr>
+              <tr><td><span class="led led-ok"></span>webserver</td><td>nginx / tunnel</td><td class="ok">public</td></tr>
+              <tr><td><span class="led led-warn"></span>cloud</td><td>az-900 → cks</td><td class="warn">learning</td></tr>
+              <tr><td><span class="led led-warn"></span>automation</td><td>ci/cd · iac</td><td class="warn">learning</td></tr>
+            </table>
+            <p class="term-comment">uptime: learning &nbsp;·&nbsp; stack: devsecops / proxmox / linux</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section container" id="about">
+      <h2><span class="path">~/</span>about</h2>
+      <div class="about-grid">
+        <p class="about-text">
+          I am a certified IT specialist for system integration (German IHK vocational
+          qualification) and work as a Junior DevSecOps Engineer – focused on
+          file-transfer platforms and secure infrastructure. What interests me is how
+          IT really works behind the scenes: networks, Linux systems, virtualization
+          and running services securely. In my own homelab I build and test
+          technologies hands-on instead of only learning them in theory. My next
+          development step leads deliberately towards cloud, Kubernetes security and
+          automation – with a clear certification roadmap as the common thread.
+        </p>
+        <div class="about-meta">
+          <p><span class="meta-key">role:</span> junior devsecops engineer</p>
+          <p><span class="meta-key">focus:</span> secure infrastructure · file transfer · homelab</p>
+          <p><span class="meta-key">next:</span> cloud · kubernetes-security · automation</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section container" id="skills">
+      <h2><span class="path">~/</span>skills</h2>
+      <div class="conf-window">
+        <div class="conf-bar">
+          <span class="conf-file">~/dotfiles/skills.conf</span>
+          <span class="conf-meta">read-only</span>
+        </div>
+        <div class="conf-body">
+
+          <section class="conf-group">
+            <h3 class="conf-key">[network]</h3>
+            <p class="conf-values">vlans, firewall-rules, routing-basics, dns, dhcp, port-forwarding, reverse-proxy, cloudflare-tunnel</p>
+          </section>
+
+          <section class="conf-group">
+            <h3 class="conf-key">[virtualization]</h3>
+            <p class="conf-values">proxmox-ve, lxc-containers, virtual-machines, templates, snapshots, resource-planning, homelab-structure</p>
+          </section>
+
+          <section class="conf-group">
+            <h3 class="conf-key">[systems]</h3>
+            <p class="conf-values">linux, debian, ubuntu, rocky-linux, windows-basics, server-services, ssh, package-management</p>
+          </section>
+
+          <section class="conf-group">
+            <h3 class="conf-key">[self-hosting]</h3>
+            <p class="conf-values">pi-hole, dns-filtering, web-hosting, reverse-proxy, internal-services, segmentation, backup-basics</p>
+          </section>
+
+          <section class="conf-group">
+            <h3 class="conf-key">[automation]</h3>
+            <p class="conf-values">shell-basics, central-system-management, foreman/katello, update-management, documentation, structured-troubleshooting</p>
+          </section>
+
+          <section class="conf-group conf-learning">
+            <h3 class="conf-key">[currently-learning]</h3>
+            <p class="conf-comment"># in progress · az-900 → kcsa → cka → cks</p>
+            <p class="conf-values">cloud-fundamentals (azure/aws), kubernetes, cloud-security, wireguard, monitoring, logging, infrastructure-as-code, ci/cd, n8n, zapier, backup-concept, secure-publishing-of-internal-services</p>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section container" id="projects">
+      <h2><span class="path">~/</span>projects</h2>
+
+      <article class="project project-featured">
+        <div class="project-head">
+          <h3 class="project-title">Proxmox Homelab</h3>
+          <span class="badge badge-progress">under active development</span>
+        </div>
+        <div class="project-featured-grid">
+          <div>
+            <p>
+              Built my own homelab from scratch – as a practical learning environment
+              for everything relevant to my job and further training. A Proxmox server
+              with VMs and LXC containers, a segmented network with VLANs and firewall
+              zones, a self-hosted DNS filter and publicly reachable services without
+              any open ports.
+            </p>
+            <p class="learned"><span class="meta-key">learned:</span> virtualization, resource planning, network segmentation, service separation and secure operation of self-hosted services.</p>
+          </div>
+          <ul class="project-facts">
+            <li><span class="meta-key">host:</span> proxmox ve · debian</li>
+            <li><span class="meta-key">net:</span> vlans · firewall zones</li>
+            <li><span class="meta-key">dns:</span> pi-hole · dns filter</li>
+            <li><span class="meta-key">public:</span> cloudflare tunnel · no open ports</li>
+          </ul>
+        </div>
+
+        <!-- Topology: the real homelab architecture, state colors matching the badges -->
+        <figure class="topology">
+          <svg class="topo topo-desktop" viewBox="0 0 1160 600" aria-hidden="true" focusable="false">
+            <defs>
+              <marker id="tpa-d" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+                <path class="tp-arrow" d="M 0 0 L 8 4 L 0 8 Z"/>
+              </marker>
+            </defs>
+
+            <!-- Uplink chain: strictly linear -->
+            <g class="tp-fade">
+              <rect class="tp-node" x="24" y="28" width="120" height="76" rx="3"/>
+              <text class="tp-title" x="84" y="71" text-anchor="middle">internet</text>
+            </g>
+            <path class="tp-link" d="M 144 66 H 204" pathLength="1"/>
+            <g class="tp-fade">
+              <rect class="tp-node" x="204" y="28" width="150" height="76" rx="3"/>
+              <text class="tp-title" x="279" y="52" text-anchor="middle">fritz!box</text>
+              <text class="tp-sub" x="279" y="71" text-anchor="middle">modem · nat</text>
+              <text class="tp-sub" x="279" y="89" text-anchor="middle">192.168.178.0/24</text>
+            </g>
+            <path class="tp-link" d="M 354 66 H 414" pathLength="1"/>
+            <g class="tp-fade">
+              <rect class="tp-node" x="414" y="28" width="230" height="76" rx="3"/>
+              <text class="tp-title" x="529" y="52" text-anchor="middle">unifi cloud gateway ultra</text>
+              <text class="tp-sub" x="529" y="71" text-anchor="middle">routing · firewall zones · nat</text>
+            </g>
+            <path class="tp-link" d="M 644 66 H 684" pathLength="1"/>
+            <g class="tp-fade">
+              <rect class="tp-node" x="684" y="28" width="190" height="76" rx="3"/>
+              <text class="tp-title" x="779" y="52" text-anchor="middle">tp-link tl-sg108pe</text>
+              <text class="tp-sub" x="779" y="71" text-anchor="middle">managed switch · 802.1q</text>
+            </g>
+            <path class="tp-link" d="M 779 104 V 190" pathLength="1"/>
+
+            <!-- Planned: WireGuard VPN on the gateway -->
+            <g class="tp-fade">
+              <path class="tp-link-plan" d="M 529 104 V 124"/>
+              <rect class="tp-node-plan" x="429" y="124" width="200" height="52" rx="3"/>
+              <text class="tp-zone-title" x="529" y="146" text-anchor="middle">wireguard vpn</text>
+              <text class="tp-plan-label" x="529" y="166" text-anchor="middle">10.10.50.0/24 · planned</text>
+            </g>
+
+            <!-- Proxmox host with VLAN zones -->
+            <g class="tp-fade">
+              <rect class="tp-host" x="64" y="190" width="1072" height="330" rx="4"/>
+              <circle class="tp-led-ok" cx="86" cy="217" r="4"/>
+              <text class="tp-title" x="98" y="222">proxmox ve</text>
+              <text class="tp-sub" x="196" y="222">pve.homelab.lan · 10.10.10.10</text>
+            </g>
+            <g class="tp-fade">
+              <rect class="tp-zone" x="88" y="250" width="238" height="240" rx="3"/>
+              <text class="tp-zone-title" x="104" y="280">vlan 10 · management</text>
+              <text class="tp-sub" x="104" y="300">10.10.10.0/24</text>
+              <rect class="tp-node" x="106" y="350" width="202" height="80" rx="3"/>
+              <circle class="tp-led-ok" cx="126" cy="371" r="4"/>
+              <text class="tp-title" x="138" y="376">pi-hole · lxc</text>
+              <text class="tp-sub" x="138" y="396">dns filter</text>
+              <text class="tp-sub" x="138" y="414">10.10.10.53</text>
+            </g>
+            <g class="tp-fade">
+              <rect class="tp-zone" x="350" y="250" width="238" height="240" rx="3"/>
+              <text class="tp-zone-title" x="366" y="280">vlan 20 · vm-server</text>
+              <text class="tp-sub" x="366" y="300">10.10.20.0/24</text>
+              <rect class="tp-node" x="368" y="350" width="202" height="80" rx="3"/>
+              <circle class="tp-led-ok" cx="388" cy="371" r="4"/>
+              <text class="tp-title" x="400" y="376">webserver · lxc</text>
+              <text class="tp-sub" x="400" y="396">nginx + cloudflared</text>
+              <text class="tp-sub" x="400" y="414">10.10.20.50</text>
+            </g>
+            <g class="tp-fade">
+              <rect class="tp-zone tp-zone-plan" x="612" y="250" width="238" height="240" rx="3"/>
+              <text class="tp-zone-title" x="628" y="280">vlan 30 · client/test</text>
+              <text class="tp-sub" x="628" y="300">10.10.30.0/24</text>
+              <text class="tp-plan-label" x="731" y="386" text-anchor="middle">○ planned</text>
+            </g>
+            <g class="tp-fade">
+              <rect class="tp-zone tp-zone-plan" x="874" y="250" width="238" height="240" rx="3"/>
+              <text class="tp-zone-title" x="890" y="280">vlan 40 · iot</text>
+              <text class="tp-sub" x="890" y="300">10.10.40.0/24</text>
+              <text class="tp-plan-label" x="993" y="386" text-anchor="middle">○ planned</text>
+            </g>
+
+            <!-- Cloudflare Tunnel: established outbound from the webserver LXC,
+                 the arrow shows the connection direction towards the outside -->
+            <path class="tp-tunnel" marker-end="url(#tpa-d)" d="M 530 432 V 532 Q 530 548 514 548 H 56 Q 40 548 40 532 V 192 Q 40 176 56 176 H 68 Q 84 176 84 160 V 112"/>
+            <text class="tp-sub tp-tunnel-label tp-fade" x="254" y="570" text-anchor="middle">cloudflare tunnel · no open ports</text>
+            <text class="tp-you tp-fade" x="450" y="460" text-anchor="middle">◄ you are here</text>
+          </svg>
+
+          <!-- Simplified vertical variant for narrow screens -->
+          <svg class="topo topo-mobile" viewBox="0 0 360 700" aria-hidden="true" focusable="false">
+            <defs>
+              <marker id="tpa-m" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+                <path class="tp-arrow" d="M 0 0 L 8 4 L 0 8 Z"/>
+              </marker>
+            </defs>
+            <g class="tp-fade">
+              <rect class="tp-node" x="40" y="16" width="280" height="52" rx="3"/>
+              <text class="tp-title" x="180" y="47" text-anchor="middle">internet</text>
+            </g>
+            <path class="tp-link" d="M 180 68 V 96" pathLength="1"/>
+            <g class="tp-fade">
+              <rect class="tp-node" x="40" y="96" width="280" height="52" rx="3"/>
+              <text class="tp-title" x="180" y="118" text-anchor="middle">fritz!box</text>
+              <text class="tp-sub" x="180" y="137" text-anchor="middle">modem · nat · 192.168.178.0/24</text>
+            </g>
+            <path class="tp-link" d="M 180 148 V 176" pathLength="1"/>
+            <g class="tp-fade">
+              <rect class="tp-node" x="40" y="176" width="280" height="52" rx="3"/>
+              <text class="tp-title" x="180" y="198" text-anchor="middle">unifi cloud gateway ultra</text>
+              <text class="tp-sub" x="180" y="217" text-anchor="middle">routing · firewall zones · nat</text>
+            </g>
+            <path class="tp-link" d="M 180 228 V 256" pathLength="1"/>
+            <g class="tp-fade">
+              <rect class="tp-node" x="40" y="256" width="280" height="52" rx="3"/>
+              <text class="tp-title" x="180" y="278" text-anchor="middle">tp-link tl-sg108pe</text>
+              <text class="tp-sub" x="180" y="297" text-anchor="middle">managed switch · 802.1q</text>
+            </g>
+            <path class="tp-link" d="M 180 308 V 336" pathLength="1"/>
+            <g class="tp-fade">
+              <rect class="tp-host" x="24" y="336" width="312" height="340" rx="4"/>
+              <circle class="tp-led-ok" cx="46" cy="363" r="4"/>
+              <text class="tp-title" x="58" y="368">proxmox ve</text>
+              <text class="tp-sub" x="156" y="368">10.10.10.10</text>
+            </g>
+            <g class="tp-fade">
+              <rect class="tp-zone" x="44" y="384" width="272" height="56" rx="3"/>
+              <text class="tp-zone-title" x="60" y="407">vlan 10 · management</text>
+              <text class="tp-sub" x="60" y="426">pi-hole · dns filter</text>
+              <circle class="tp-led-ok" cx="298" cy="412" r="4"/>
+            </g>
+            <g class="tp-fade">
+              <rect class="tp-zone" x="44" y="452" width="272" height="72" rx="3"/>
+              <text class="tp-zone-title" x="60" y="475">vlan 20 · vm-server</text>
+              <text class="tp-sub" x="60" y="494">webserver · nginx · tunnel</text>
+              <text class="tp-you" x="60" y="514">◄ you are here</text>
+              <circle class="tp-led-ok" cx="298" cy="480" r="4"/>
+            </g>
+            <g class="tp-fade">
+              <rect class="tp-zone tp-zone-plan" x="44" y="536" width="272" height="56" rx="3"/>
+              <text class="tp-zone-title" x="60" y="559">vlan 30 · client/test</text>
+              <text class="tp-plan-label" x="60" y="578">planned</text>
+            </g>
+            <g class="tp-fade">
+              <rect class="tp-zone tp-zone-plan" x="44" y="604" width="272" height="56" rx="3"/>
+              <text class="tp-zone-title" x="60" y="627">vlan 40 · iot</text>
+              <text class="tp-plan-label" x="60" y="646">planned</text>
+            </g>
+            <path class="tp-tunnel" marker-end="url(#tpa-m)" d="M 44 488 H 20 Q 12 488 12 480 V 50 Q 12 42 20 42 H 34"/>
+          </svg>
+
+          <figcaption class="topo-legend">
+            <span class="sr-only">Topology: internet via FRITZ!Box (modem/NAT), UniFi Cloud Gateway Ultra (routing, firewall zones) and a TP-Link switch to Proxmox VE with four VLANs – VLAN 10 management with Pi-hole (10.10.10.53) and VLAN 20 vm-server with a webserver LXC (Nginx and cloudflared, 10.10.20.50) are active, VLAN 30 client/test and VLAN 40 IoT are planned. The Cloudflare Tunnel is established outbound from the webserver container – no open ports. A WireGuard VPN (10.10.50.0/24) is planned on the gateway.</span>
+            <span class="topo-key"><span class="led led-ok"></span>active</span>
+            <span class="topo-key"><span class="topo-plan-swatch"></span>planned</span>
+            <span class="topo-key"><span class="topo-dash"></span>cloudflare tunnel · no open ports</span>
+          </figcaption>
+        </figure>
+
+        <p class="project-stack">proxmox-ve · debian · lxc · vms · vlans · dns/pi-hole · cloudflare-tunnel</p>
+      </article>
+
+      <div class="projects-grid">
+
+        <article class="project">
+          <div class="project-head">
+            <h3 class="project-title">Self-hosted Portfolio Website</h3>
+            <span class="badge badge-progress">in progress</span>
+          </div>
+          <p>
+            This website – hosted on my own Proxmox homelab in a Debian LXC with
+            Nginx, published via Cloudflare Tunnel instead of open ports.
+            Deliberately privacy-friendly: static, no tracking, no external
+            dependencies.
+          </p>
+          <p class="learned"><span class="meta-key">learned:</span> web hosting, HTTPS, DNS, secure publishing and privacy aspects of self-hosting.</p>
+          <p class="project-stack">html/css/js · nginx · debian-lxc · cloudflare-tunnel · https · dns</p>
+        </article>
+
+        <article class="project project-planned">
+          <div class="project-head">
+            <h3 class="project-title">DevSecOps Learning Lab</h3>
+            <span class="badge badge-planned">planned / building</span>
+          </div>
+          <p>
+            Extending the homelab into a DevSecOps practice environment: CI/CD
+            pipelines, Infrastructure as Code, container security and workflow
+            automation. The goal is a public GitHub portfolio with reproducible,
+            hardened setups instead of pure theory.
+          </p>
+          <p class="learned"><span class="meta-key">focus:</span> Terraform, hardened pipelines, policy as code, container scanning and automation with n8n.</p>
+          <p class="project-stack">ci/cd · infrastructure-as-code · terraform · container-security · n8n · github</p>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <h3 class="project-title">Cloud &amp; Kubernetes Journey</h3>
+            <span class="badge badge-planned">started</span>
+          </div>
+          <p>
+            A structured path towards cloud and Kubernetes security along a clear
+            certification roadmap: from cloud fundamentals via Kubernetes
+            administration to the security specialization – accompanied by
+            hands-on exercises in the homelab.
+          </p>
+          <p class="learned"><span class="meta-key">roadmap:</span> Cloud fundamentals → KCSA → CKA → CKS → cloud security specialization. Details in the <a href="#certifications">certifications</a> section.</p>
+          <p class="project-stack">azure/aws · kubernetes · cloud-security · devsecops</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section class="section container" id="certifications">
+      <h2><span class="path">~/</span>certifications</h2>
+      <div class="checklist">
+
+        <section>
+          <h3 class="check-title"># completed</h3>
+          <ul class="check-list">
+            <li class="check-done">
+              <span class="check-box">[x]</span>
+              <span class="cert-name">Fachinformatiker für Systemintegration (IHK) – German vocational qualification, IT Specialist for System Integration</span>
+            </li>
+            <li class="cert-placeholder">
+              <span class="check-box">[ ]</span>
+              <span class="cert-name">more to follow …</span>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 class="check-title"># roadmap · in this order</h3>
+          <ol class="check-roadmap">
+            <li class="check-active">
+              <span class="check-box">[~] 01</span>
+              <span>
+                <span class="cert-name">Cloud fundamentals – Microsoft AZ-900 / AWS Cloud Practitioner</span>
+                <span class="cert-note">Foundation &amp; direction decision · currently preparing</span>
+              </span>
+            </li>
+            <li class="check-planned">
+              <span class="check-box">[ ] 02</span>
+              <span>
+                <span class="cert-name">KCSA – Kubernetes &amp; Cloud Native Security Associate</span>
+                <span class="cert-note">Entry into cloud-native security</span>
+              </span>
+            </li>
+            <li class="check-planned">
+              <span class="check-box">[ ] 03</span>
+              <span>
+                <span class="cert-name">CKA – Certified Kubernetes Administrator</span>
+                <span class="cert-note">Hands-on Kubernetes practice</span>
+              </span>
+            </li>
+            <li class="check-planned">
+              <span class="check-box">[ ] 04</span>
+              <span>
+                <span class="cert-name">CKS – Certified Kubernetes Security Specialist</span>
+                <span class="cert-note">Security specialization (requires CKA)</span>
+              </span>
+            </li>
+            <li class="check-planned">
+              <span class="check-box">[ ] 05</span>
+              <span>
+                <span class="cert-name">Cloud security certification (SC-500 / AWS Security)</span>
+                <span class="cert-note">Second wave – after initial cloud practice</span>
+              </span>
+            </li>
+          </ol>
+        </section>
+
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section container" id="experience">
+      <h2><span class="path">~/</span>experience</h2>
+      <!-- git log: newest entry first, like a real log -->
+      <ol class="gitlog">
+        <li>
+          <h3>Continuous learning: cloud, DevSecOps &amp; automation</h3>
+          <span class="gitlog-ref gitlog-ref-head">(HEAD -&gt; main)</span>
+          <p>Structured certification roadmap towards cloud and Kubernetes security, complemented by CI/CD, Infrastructure as Code and workflow automation.</p>
+        </li>
+        <li>
+          <h3>Building my own homelab</h3>
+          <span class="gitlog-ref">(tag: homelab)</span>
+          <p>Practical deepening alongside the job: Proxmox, network segmentation, DNS, self-hosting and secure publishing of services.</p>
+        </li>
+        <li>
+          <h3>Starting as Junior DevSecOps Engineer</h3>
+          <span class="gitlog-ref">(tag: junior-devsecops)</span>
+          <p>Focus on file-transfer platforms and secure infrastructure – operating, hardening and evolving production systems.</p>
+        </li>
+        <li>
+          <h3>Vocational training as IT specialist for system integration</h3>
+          <span class="gitlog-ref">(tag: apprenticeship · initial commit)</span>
+          <p>Foundation in infrastructure, virtualization, Linux and networking – completed successfully.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section container" id="contact">
+      <h2><span class="path">~/</span>contact</h2>
+      <div class="card contact-card">
+        <p><strong>Luka Antonio Miloloza</strong> – for technical questions, project ideas or professional contacts you can reach me via e-mail or LinkedIn.</p>
+        <ul class="contact-list">
+          <li><span class="meta-key">mail:</span> <a href="mailto:lukaantonio.miloloza@icloud.com">lukaantonio.miloloza@icloud.com</a></li>
+          <li><span class="meta-key">linkedin:</span> <a href="https://de.linkedin.com/in/luka-antonio-miloloza-97ba49266" rel="noopener noreferrer">linkedin.com/in/luka-antonio-miloloza</a></li>
+          <!-- TODO: GitHub-Link einsetzen (Konto wird noch eingerichtet) -->
+          <li><span class="meta-key">github:</span> <span class="is-coming-soon" aria-disabled="true">being set up<span class="soon-tag">soon</span></span></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="brand">wired-mind<span class="brand-cursor">_</span></p>
+        <p class="footer-claim">DevSecOps · Homelab · Linux · Proxmox · Cloud</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#start">Start</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="../impressum.html" hreflang="de">Legal notice (Impressum, German)</a></li>
+          <li><a href="../datenschutz.html" hreflang="de">Privacy policy (German)</a></li>
+          <!-- TODO: GitHub-Link einsetzen (Konto wird noch eingerichtet) -->
+          <li><span class="is-coming-soon" aria-disabled="true">GitHub<span class="soon-tag">soon</span></span></li>
+          <li><a href="https://de.linkedin.com/in/luka-antonio-miloloza-97ba49266" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer-note container">© <span id="year"></span> Luka Antonio Miloloza</p>
+    <p class="footer-eof container">/* last updated: 2026-07-04 */</p>
+    <p class="footer-eof container"># EOF · static · self-hosted · no cookies, tracking or external services</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
