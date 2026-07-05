@@ -1,4 +1,5 @@
 # security.txt nach RFC 9116 · https://www.wired-mind.net
+# TODO: auf kontakt@wired-mind.net umstellen, sobald Cloudflare Email Routing eingerichtet ist
 Contact: mailto:lukaantonio.miloloza@icloud.com
 Expires: 2027-07-05T00:00:00.000Z
 Preferred-Languages: de, en
