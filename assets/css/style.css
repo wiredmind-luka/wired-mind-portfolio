@@ -795,7 +795,23 @@ h3 {
 .boot-bar { color: var(--accent-2); letter-spacing: 0.04em; margin-top: var(--space-3); }
 
 /* ---------- Rechtsseiten (Impressum / Datenschutz) ---------- */
+/* Kurzer Inhalt + hoher Viewport: Seite füllt die volle Höhe, der Footer
+   schließt bündig mit dem unteren Rand ab – kein Hintergrundstreifen
+   unterhalb des Footers. */
+.legal-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.legal-page .legal { flex: 1 0 auto; width: 100%; }
+.legal-page .site-footer { margin-top: auto; }
+
 .legal { max-width: 760px; padding-block: var(--space-8); }
+/* Bewusst transparent: so scheint exakt der body-Hintergrund (var(--bg)
+   inkl. Rasterlinien) durch – ein Farbsprung zwischen .legal und body ist
+   damit ausgeschlossen. Eine eigene (auch gleichfarbige) Deckfläche würde
+   das Raster im Textbereich abdecken und selbst eine Kante erzeugen. */
+.legal { background-color: transparent; }
 .legal h1 { font-size: 1.7rem; }
 .legal h2 { font-size: 1.1rem; margin-top: var(--space-6); }
 .legal p, .legal li { color: var(--muted); }
