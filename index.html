@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>wired-mind · DevSecOps, Homelab &amp; moderne Infrastruktur</title>
-  <meta name="description" content="Portfolio von Luka Antonio Miloloza – Junior DevSecOps Engineer und Fachinformatiker für Systemintegration. Homelab, Proxmox, Linux, Cloud und Automatisierung.">
-  <meta property="og:title" content="wired-mind · DevSecOps, Homelab &amp; moderne Infrastruktur">
-  <meta property="og:description" content="Junior DevSecOps Engineer. Ich baue, verstehe und dokumentiere IT-Infrastruktur – vom Proxmox-Homelab bis zu Cloud, Security und Automatisierung.">
+  <title>wired-mind · DevSecOps, Self-Hosting &amp; moderne Infrastruktur</title>
+  <meta name="description" content="Portfolio von Luka Antonio Miloloza, DevSecOps Engineer und Fachinformatiker für Systemintegration. Self-Hosting, Proxmox, Linux, Cloud und Automatisierung.">
+  <meta property="og:title" content="wired-mind · DevSecOps, Self-Hosting &amp; moderne Infrastruktur">
+  <meta property="og:description" content="DevSecOps Engineer. Ich baue, verstehe und dokumentiere IT-Infrastruktur: vom selbst gehosteten Proxmox-Setup bis zu Cloud, Security und Automatisierung.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.wired-mind.net/">
   <meta property="og:locale" content="de_DE">
@@ -69,13 +69,13 @@
     <!-- ===================== HERO ===================== -->
     <section class="hero container">
       <div class="hero-text">
-        <p class="eyebrow">Junior DevSecOps Engineer · Fachinformatiker für Systemintegration</p>
+        <p class="eyebrow">DevSecOps Engineer · Fachinformatiker für Systemintegration</p>
         <h1>Ich baue, verstehe und sichere IT&#8209;Infrastruktur.</h1>
         <p class="hero-sub">
-          Vom eigenen Proxmox-Homelab über Linux-Systeme und Netzwerke bis zu sicheren
-          Filetransfer-Plattformen im Berufsalltag. Aktuell erweitere ich mein Profil
-          gezielt Richtung Cloud, Kubernetes-Security und Automatisierung – praxisnah,
-          strukturiert und mit klarer Roadmap.
+          Von der eigenen Self-Hosting-Infrastruktur auf Proxmox über Linux-Systeme
+          und Netzwerke bis zu sicheren Filetransfer-Plattformen im Berufsalltag.
+          Aktuell erweitere ich mein Profil gezielt Richtung Cloud, Kubernetes-Security
+          und Automatisierung: praxisnah, strukturiert und mit klarer Roadmap.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projekte">Projekte ansehen</a>
@@ -88,10 +88,10 @@
       <div class="terminal" aria-hidden="true">
         <div class="terminal-bar">
           <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
-          <span class="terminal-title">luka@homelab: ~</span>
+          <span class="terminal-title">luka@pve: ~</span>
         </div>
         <div class="terminal-body">
-          <p class="term-line"><span class="prompt">luka@homelab:~$</span> <span id="typed-cmd"></span><span class="cursor" id="term-cursor">▊</span></p>
+          <p class="term-line"><span class="prompt">luka@pve:~$</span> <span id="typed-cmd"></span><span class="cursor" id="term-cursor">▊</span></p>
           <div class="term-output" id="term-output">
             <p class="term-comment"># infrastructure status</p>
             <table class="status-table">
@@ -114,17 +114,18 @@
       <div class="about-grid">
         <p class="about-text">
           Ich bin ausgelernter Fachinformatiker für Systemintegration und arbeite als
-          Junior DevSecOps Engineer – mit Schwerpunkt auf Filetransfer-Plattformen und
-          sicherer Infrastruktur. Mich interessiert, wie IT im Hintergrund wirklich
-          funktioniert: Netzwerke, Linux-Systeme, Virtualisierung und der sichere
-          Betrieb von Diensten. In meinem eigenen Homelab baue und teste ich
-          Technologien praxisnah nach, statt sie nur theoretisch zu lernen. Mein
-          nächster Entwicklungsschritt führt gezielt Richtung Cloud, Kubernetes-Security
-          und Automatisierung – mit einer klaren Zertifizierungs-Roadmap als roten Faden.
+          DevSecOps Engineer mit Schwerpunkt auf Filetransfer-Plattformen und
+          sicherer Infrastruktur. Ich beschäftige mich damit, wie IT im Hintergrund
+          wirklich funktioniert, und baue sie selbst auf: Netzwerke, Linux-Systeme,
+          Virtualisierung und der sichere Betrieb eigener Dienste. In meiner eigenen
+          Self-Hosting-Umgebung setze ich Technologien praxisnah um, statt sie nur
+          theoretisch zu lernen. Mein nächster Schritt führt gezielt Richtung Cloud,
+          Kubernetes-Security und Automatisierung, mit einer klaren
+          Zertifizierungs-Roadmap als rotem Faden.
         </p>
         <div class="about-meta">
-          <p><span class="meta-key">role:</span> junior devsecops engineer</p>
-          <p><span class="meta-key">focus:</span> sichere infrastruktur · filetransfer · homelab</p>
+          <p><span class="meta-key">role:</span> devsecops engineer</p>
+          <p><span class="meta-key">focus:</span> sichere infrastruktur · filetransfer · self-hosting</p>
           <p><span class="meta-key">next:</span> cloud · kubernetes-security · automation</p>
         </div>
       </div>
@@ -147,7 +148,7 @@
 
           <section class="conf-group">
             <h3 class="conf-key">[virtualization]</h3>
-            <p class="conf-values">proxmox-ve, lxc-container, virtuelle-maschinen, templates, snapshots, ressourcenplanung, homelab-struktur</p>
+            <p class="conf-values">proxmox-ve, lxc-container, virtuelle-maschinen, templates, snapshots, ressourcenplanung, self-hosting-struktur</p>
           </section>
 
           <section class="conf-group">
@@ -181,14 +182,15 @@
 
       <article class="project project-featured">
         <div class="project-head">
-          <h3 class="project-title">Proxmox Homelab</h3>
+          <h3 class="project-title">Proxmox Self-Hosting-Setup</h3>
           <span class="badge badge-progress">in weiterentwicklung</span>
         </div>
         <div class="project-featured-grid">
           <div>
             <p>
-              Eigenes Homelab von Grund auf aufgebaut – als praktische Lernumgebung für
-              alles, was im Job und in der Weiterbildung relevant ist. Proxmox-Server mit
+              Eigenes Self-Hosting-Setup von Grund auf aufgebaut: eine praktische
+              Lernumgebung für alles, was im Job und in der Weiterbildung relevant ist.
+              Proxmox-Server mit
               VMs und LXC-Containern, segmentiertes Netzwerk mit VLANs und Firewall-Zonen,
               eigener DNS-Filter und öffentlich erreichbare Dienste ohne offene Ports.
             </p>
@@ -202,7 +204,7 @@
           </ul>
         </div>
 
-        <!-- Topologie: echte Homelab-Architektur, Zustandsfarben wie bei den Badges -->
+        <!-- Topologie: echte Self-Hosting-Architektur, Zustandsfarben wie bei den Badges -->
         <figure class="topology">
           <svg class="topo topo-desktop" viewBox="0 0 1160 600" aria-hidden="true" focusable="false">
             <defs>
@@ -355,7 +357,7 @@
           </svg>
 
           <figcaption class="topo-legend">
-            <span class="sr-only">Topologie: Internet über FRITZ!Box (Modem/NAT), UniFi Cloud Gateway Ultra (Routing, Firewall-Zonen) und TP-Link-Switch zu Proxmox VE mit vier VLANs – VLAN 10 Management mit Pi-hole (10.10.10.53) und VLAN 20 VM-Server mit Webserver-LXC (Nginx und cloudflared, 10.10.20.50) aktiv, VLAN 30 Client/Test und VLAN 40 IoT geplant. Der Cloudflare Tunnel wird vom Webserver-Container ausgehend aufgebaut – keine offenen Ports. Am Gateway ist ein WireGuard-VPN (10.10.50.0/24) geplant.</span>
+            <span class="sr-only">Topologie: Internet über FRITZ!Box (Modem/NAT), UniFi Cloud Gateway Ultra (Routing, Firewall-Zonen) und TP-Link-Switch zu Proxmox VE mit vier VLANs: VLAN 10 Management mit Pi-hole (10.10.10.53) und VLAN 20 VM-Server mit Webserver-LXC (Nginx und cloudflared, 10.10.20.50) aktiv, VLAN 30 Client/Test und VLAN 40 IoT geplant. Der Cloudflare Tunnel wird vom Webserver-Container ausgehend aufgebaut, ohne offene Ports. Am Gateway ist ein WireGuard-VPN (10.10.50.0/24) geplant.</span>
             <span class="topo-key"><span class="led led-ok"></span>aktiv</span>
             <span class="topo-key"><span class="topo-plan-swatch"></span>geplant</span>
             <span class="topo-key"><span class="topo-dash"></span>cloudflare tunnel · keine offenen ports</span>
@@ -373,9 +375,10 @@
             <span class="badge badge-progress">im aufbau</span>
           </div>
           <p>
-            Diese Website – gehostet auf dem eigenen Proxmox-Homelab in einem Debian-LXC
-            mit Nginx, veröffentlicht über Cloudflare Tunnel statt offener Ports.
-            Bewusst datensparsam: statisch, ohne Tracking, ohne externe Abhängigkeiten.
+            Diese Website läuft selbst gehostet auf dem eigenen Proxmox-Server in einem
+            Debian-LXC mit Nginx und wird über Cloudflare Tunnel statt offener Ports
+            veröffentlicht. Bewusst datensparsam: statisch, ohne Tracking, ohne externe
+            Abhängigkeiten.
           </p>
           <p class="learned"><span class="meta-key">gelernt:</span> Webhosting, HTTPS, DNS, sichere Veröffentlichung und Datenschutz-Aspekte beim Self-Hosting.</p>
           <p class="project-stack">html/css/js · nginx · debian-lxc · cloudflare-tunnel · https · dns</p>
@@ -387,7 +390,7 @@
             <span class="badge badge-planned">geplant / im aufbau</span>
           </div>
           <p>
-            Erweiterung des Homelabs zur DevSecOps-Übungsumgebung: CI/CD-Pipelines,
+            Ausbau des eigenen Self-Hosting-Setups zur DevSecOps-Übungsumgebung: CI/CD-Pipelines,
             Infrastructure as Code, Container-Security und Workflow-Automatisierung.
             Ziel ist ein öffentliches GitHub-Portfolio mit nachvollziehbaren,
             abgesicherten Setups statt reiner Theorie.
@@ -404,8 +407,8 @@
           <p>
             Strukturierter Weg Richtung Cloud- und Kubernetes-Security entlang einer
             klaren Zertifizierungs-Roadmap: von Cloud-Grundlagen über
-            Kubernetes-Administration bis zur Security-Spezialisierung – begleitet von
-            praktischen Übungen im Homelab.
+            Kubernetes-Administration bis zur Security-Spezialisierung, begleitet von
+            praktischen Übungen in der eigenen Self-Hosting-Umgebung.
           </p>
           <p class="learned"><span class="meta-key">roadmap:</span> Cloud-Fundamentals → KCSA → CKA → CKS → Cloud-Security-Spezialisierung. Details im Abschnitt <a href="#zertifizierungen">Zertifizierungen</a>.</p>
           <p class="project-stack">azure/aws · kubernetes · cloud-security · devsecops</p>
@@ -468,7 +471,7 @@
               <span class="check-box">[ ] 05</span>
               <span>
                 <span class="cert-name">Cloud-Security-Zertifizierung (SC-500 / AWS Security)</span>
-                <span class="cert-note">Zweite Welle – nach erster Cloud-Praxis</span>
+                <span class="cert-note">Zweite Welle: nach erster Cloud-Praxis</span>
               </span>
             </li>
           </ol>
@@ -488,19 +491,19 @@
           <p>Strukturierte Zertifizierungs-Roadmap Richtung Cloud- und Kubernetes-Security, ergänzt um CI/CD, Infrastructure as Code und Workflow-Automatisierung.</p>
         </li>
         <li>
-          <h3>Aufbau eines eigenen Homelabs</h3>
-          <span class="gitlog-ref">(tag: homelab)</span>
+          <h3>Aufbau einer eigenen Self-Hosting-Umgebung</h3>
+          <span class="gitlog-ref">(tag: self-hosting)</span>
           <p>Praktische Vertiefung parallel zum Job: Proxmox, Netzwerksegmentierung, DNS, Self-Hosting und sichere Veröffentlichung von Diensten.</p>
         </li>
         <li>
-          <h3>Einstieg als Junior DevSecOps Engineer</h3>
-          <span class="gitlog-ref">(tag: junior-devsecops)</span>
-          <p>Schwerpunkt Filetransfer-Plattformen und sichere Infrastruktur – Betrieb, Härtung und Weiterentwicklung produktiver Systeme.</p>
+          <h3>Einstieg als DevSecOps Engineer</h3>
+          <span class="gitlog-ref">(tag: devsecops)</span>
+          <p>Schwerpunkt Filetransfer-Plattformen und sichere Infrastruktur: Betrieb, Härtung und Weiterentwicklung produktiver Systeme.</p>
         </li>
         <li>
           <h3>Ausbildung zum Fachinformatiker für Systemintegration</h3>
           <span class="gitlog-ref">(tag: ausbildung · initial commit)</span>
-          <p>Fundament in Infrastruktur, Virtualisierung, Linux und Netzwerken – mit erfolgreichem Abschluss.</p>
+          <p>Fundament in Infrastruktur, Virtualisierung, Linux und Netzwerken, erfolgreich abgeschlossen.</p>
         </li>
       </ol>
     </section>
@@ -509,7 +512,7 @@
     <section class="section container" id="kontakt">
       <h2><span class="path">~/</span>kontakt</h2>
       <div class="card contact-card">
-        <p><strong>Luka Antonio Miloloza</strong> – für technische Fragen, Projektideen oder berufliche Kontakte bin ich per E-Mail oder LinkedIn erreichbar.</p>
+        <p><strong>Luka Antonio Miloloza</strong>. Für technische Fragen, Projektideen oder berufliche Kontakte bin ich per E-Mail oder LinkedIn erreichbar.</p>
         <ul class="contact-list">
           <li><span class="meta-key">mail:</span> <a href="mailto:lukaantonio.miloloza@icloud.com">lukaantonio.miloloza@icloud.com</a></li>
           <li><span class="meta-key">linkedin:</span> <a href="https://de.linkedin.com/in/luka-antonio-miloloza-97ba49266" rel="noopener noreferrer">linkedin.com/in/luka-antonio-miloloza</a></li>
@@ -525,7 +528,7 @@
     <div class="container footer-grid">
       <div>
         <p class="brand">wired-mind<span class="brand-cursor">_</span></p>
-        <p class="footer-claim">DevSecOps · Homelab · Linux · Proxmox · Cloud</p>
+        <p class="footer-claim">DevSecOps · Self-Hosting · Linux · Proxmox · Cloud</p>
       </div>
       <nav aria-label="Footer-Navigation">
         <ul class="footer-links">
